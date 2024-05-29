@@ -35,7 +35,7 @@ class User extends CI_Controller
     {
         $this->User_Model->Save();
         if ($this->db->affected_rows() > 0) {
-            $this->session->set_flashdata('Success', 'Data Berhasil Disimpan');
+            $this->session->set_flashdata('success', 'Data Berhasil Disimpan');
         }
         redirect('user');
     }
@@ -54,7 +54,7 @@ class User extends CI_Controller
     {
         $this->User_Model->editData();
         if ($this->db->affected_rows() > 0) {
-            $this->session->set_flashdata('Success', 'Data Berhasil Diupdate');
+            $this->session->set_flashdata('success', 'Data Berhasil Diupdate');
         }
         redirect('user');
     }

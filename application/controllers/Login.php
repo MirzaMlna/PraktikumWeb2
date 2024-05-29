@@ -46,11 +46,11 @@ class Login extends CI_Controller
                 }
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger fw-bold" role="alert">Password Salah!</div>');
-                redirect('/');
+                redirect('login');
             }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-warning fw-bold" role="alert">Akun Tidak Terdaftar!</div>');
-            redirect('/');
+            redirect('login');
             // ☝️
         }
     }
@@ -58,5 +58,18 @@ class Login extends CI_Controller
     {
         $sql = "UPDATE user SET last_login=now() WHERE id=$userId";
         $this->db->query($sql);
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect(site_url('login'));
+    }
+    public function block()
+    {
+        $data = array(
+            'user' => infoLogin(),
+            'title' => 'Access Denied'
+        );
     }
 }

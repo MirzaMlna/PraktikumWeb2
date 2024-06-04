@@ -24,26 +24,23 @@
                                  <th>Name</th>
                                  <th>Telpon</th>
                                  <th>Email</th>
-                                 <th>Bank</th>
-                                 <th>Akun Bank</th>
-                                 <th>No Bank</th>
+                                 <th>Alamat</th>
+
                                  <th class="d-flex justify-content-center">Action</th>
                              </tr>
                          </thead>
                          <tbody>
                              <?php
                                 $no = 1;
-                                foreach ($supplier as $supplier) {
+                                foreach ($kustomer as $kustomer) {
                                 ?>
                                  <tr>
                                      <td><?php echo $no; ?></td>
-                                     <td><?php echo $supplier->id; ?></td>
-                                     <td><?php echo $supplier->name; ?></td>
-                                     <td><?php echo $supplier->telp; ?></td>
-                                     <td><?php echo $supplier->email; ?></td>
-                                     <td><?php echo $supplier->nama_bank; ?></td>
-                                     <td><?php echo $supplier->nama_akun_bank; ?></td>
-                                     <td><?php echo $supplier->no_akun_bank; ?></td>
+                                     <td><?php echo $kustomer->id; ?></td>
+                                     <td><?php echo $kustomer->name; ?></td>
+                                     <td><?php echo $kustomer->telp; ?></td>
+                                     <td><?php echo $kustomer->email; ?></td>
+                                     <td><?php echo $kustomer->alamat; ?></td>
 
                                      <td>
                                          <div class="d-flex justify-content-center">

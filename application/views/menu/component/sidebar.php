@@ -18,9 +18,9 @@
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="<?php echo base_url('kategori'); ?>">Kategori</a>
                             <a class="nav-link" href="<?php echo base_url('satuan'); ?>">Satuan</a>
-                            <a class="nav-link" href="">Supplier</a>
-                            <a class="nav-link" href="">Kustomer</a>
-                            <a class="nav-link" href="">Barang</a>
+                            <a class="nav-link" href="<?php echo base_url('supplier'); ?>">Supplier</a>
+                            <a class="nav-link" href="<?php echo base_url('kustomer'); ?>">Kustomer</a>
+                            <a class="nav-link" href="<?php echo base_url('barang'); ?>">Barang</a>
                             <a class="nav-link" href="<?php echo base_url('user'); ?>">User</a>
                         </nav>
                     </div>

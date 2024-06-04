@@ -1,9 +1,9 @@
 <?php
 
 // application/models/User_Model.php
-class Kategori_Model extends CI_Model
+class Satuan_Model extends CI_Model
 {
-    protected $_table = 'kategori';
+    protected $_table = 'satuan';
     protected $primary = 'id';
     public function getAll()
     {

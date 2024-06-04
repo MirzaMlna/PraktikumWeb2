@@ -22,18 +22,20 @@
                                  <th>No</th>
                                  <th>ID</th>
                                  <th>Name</th>
+                                 <th>Deskripsi</th>
                                  <!-- <th class="d-flex justify-content-center">Action</th> -->
                              </tr>
                          </thead>
                          <tbody>
                              <?php
                                 $no = 1;
-                                foreach ($kategori as $kategori) {
+                                foreach ($satuan as $satuan) {
                                 ?>
                                  <tr>
                                      <td><?php echo $no; ?></td>
-                                     <td><?php echo $kategori->id; ?></td>
-                                     <td><?php echo $kategori->name; ?></td>
+                                     <td><?php echo $satuan->id; ?></td>
+                                     <td><?php echo $satuan->name; ?></td>
+                                     <td><?php echo $satuan->deskripsi; ?></td>
 
                                      <!-- <td>
                                          <div class="d-flex justify-content-center">

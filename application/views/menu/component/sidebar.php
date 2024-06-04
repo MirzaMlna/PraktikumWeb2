@@ -17,7 +17,7 @@
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="<?php echo base_url('kategori'); ?>">Kategori</a>
-                            <a class="nav-link" href="">Satuan</a>
+                            <a class="nav-link" href="<?php echo base_url('satuan'); ?>">Satuan</a>
                             <a class="nav-link" href="">Supplier</a>
                             <a class="nav-link" href="">Kustomer</a>
                             <a class="nav-link" href="">Barang</a>

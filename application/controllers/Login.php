@@ -71,5 +71,6 @@ class Login extends CI_Controller
             'user' => infoLogin(),
             'title' => 'Access Denied'
         );
+        redirect('login/error404');
     }
 }
